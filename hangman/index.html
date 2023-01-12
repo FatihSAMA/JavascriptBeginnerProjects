@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Hangman</title>
+</head>
+<body>
+    <h1>Adam Asmaca</h1>
+
+    <div class="container">
+        <svg height="250px" widht="250px" class="grafik">
+            <!--Sehpa-->
+            <line x1="50px" y1="20px" x2="130px" y2="20px"/>
+            <line x1="130px" y1="18px" x2="130px" y2="50px"/>
+            <line x1="50px" y1="18px" x2="50px" y2="250px"/>
+            <line x1="10px" y1="250px" x2="90px" y2="250px"/>
+            
+            <!-- kafa -->
+            <circle cx="130" cy="70" r="20" class="item"/>
+            
+            <!-- gövde -->
+            <line x1="130px" y1="90px" x2="130px" y2="150px" class="item"/>
+            <line x1="130px" y1="100px" x2="160px" y2="120px" class="item"/>
+            <line x1="130px" y1="100px" x2="100px" y2="120px" class="item"/>
+            <line x1="130px" y1="150px" x2="110px" y2="190px" class="item"/>
+            <line x1="130px" y1="150px" x2="150px" y2="190px" class="item"/>
+
+        </svg>  
+
+
+        <div class="wrong-letters">
+            <h3>Hatalı Harfler</h3>
+            <div class="wrong-letterss">
+                
+            </div>
+        </div>
+
+        <div id="word">
+            <!-- <div class="letter">s</div>
+            <div class="letter">a</div> -->
+        </div>
+
+    </div>
+
+    <div id="popup-container">
+        <div class="popup">
+            <h2 id="succes-mesage">Kazandınız</h2>
+            <button id="play-again">Tekrar Oynayın</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
